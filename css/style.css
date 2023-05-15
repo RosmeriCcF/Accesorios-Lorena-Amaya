@@ -1,0 +1,208 @@
+/*Reset - margen y relleno*/
+*{
+    font-family: 'DM Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #FADCE1;
+}
+
+/*CSS Cabecera*/
+header {
+    background-color: white;
+    display: flex; /*Modelo de caja flexible*/
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+} 
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    
+}
+
+header li a:hover{
+    color: #D14D72;
+    text-decoration: underline;
+}
+
+.input-buscar {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+.nav_lupa {
+    height: 20px;
+    margin-right: 5px;
+}
+
+.nav_input {
+    border: none;
+    background-color: #ffffff;
+    opacity: 100%;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+img {
+    height: 50px;
+}
+
+
+h2{
+    color: #D14D72;
+}
+
+
+.cuatro-secciones{
+    background-color: white;
+}
+
+.copyrigth{
+    background-color: #D14D72;
+}
+
+.banner img{
+    width: 100%;
+    height: auto;
+}
+
+.nuestras-colecciones {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cuadro {
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nuestras-colecciones section {
+    width: 10%;
+}
+
+.personalizados img {
+    width: 100%;
+    height: auto;
+}
+
+.dos-regalos {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.frases {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.cuatro-secciones {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 20px;
+}
+
+.cuatro-secciones section {
+    margin-right: 20px;
+}
+
+.copyrigth {
+    display: flex;
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #D14D72;
+    height: 70px;
+}
+
+.copyrigth img {
+    margin-left: auto;
+}
+
+/* Boostrap Contacto */
+.bg-header{
+    background-color: white;
+    display: flex; /*Modelo de caja flexible*/
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.bg-primary {
+    background-color: #007bff!important;
+}
+
+.navbar-brand, .nav-link {
+    color: #000000!important;
+    text-decoration: none;
+}
+
+.navbar-nav .nav-link {
+    padding: 0.5rem 1rem!important;
+}
+
+.navbar-nav .nav-link:hover, .navbar-nav .nav-link:focus {
+    color: #D14D72!important;
+}
+
+.my-section {
+    background-color: #f8f9fa;
+    padding: 1rem;
+}
+
+.main-content {
+    background-color: #FADCE1;
+}
+
+/* GRID */
+.footer-grid{
+    padding: 20px;
+    background-color: #f0f0f0;
+  }
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+    align-items: center;
+  }
+
+  .footer-grid section {
+    text-align: center;
+  }
+
+  .footer-grid img {
+    max-width: 100%;
+  }
+
+  .copyrigth {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+
+
+
+
+
+
