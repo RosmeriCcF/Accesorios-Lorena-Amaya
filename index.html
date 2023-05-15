@@ -10,26 +10,51 @@
         <link rel="shortcut icon" href="./imagenes/Favicon.png" type="image/x-icon">
         <link rel="stylesheet" href="./css/style.css">
         <title>Lorena Amaya</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     </head>
 
     <body>
         <header>
-            <a href="./index.html"><img src="./imagenes/logo.png" alt="logo"></a> <!--Logo -> Inicio = Click-->
-            <nav>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="./paginas/categorias.html" target="_blank">Categorías</a></li>
-                    <li><a href="./paginas/ideas-de-regalo.html" target="_blank">Ideas de Regalo</a></li>
-                    <li><a href="./paginas/nosotros.html" target="_blank">Nosotros</a></li>
-                    <li><a href="./paginas/contacto.html" target="_blank">Contacto</a></li>
-                </ul>
-            </nav>
-                <div class="input-buscar">
-                    <img class="nav_lupa" src="./imagenes/lupa.png" alt="Lupa">
-                    <input class="nav_input" type="text" placeholder="Buscar Productos">
+            <nav class="navbar navbar-expand-lg bg-header ">
+                <div class="container-fluid">
+                    <a href="../index.html"><img src="../imagenes/logo.png" alt="logo"></a><!--Logo -> Inicio = Click-->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="nav justify-content-end">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html">Inicio</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="../paginas/categorias.html">Categorías</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="../paginas/ideas-de-regalo.html">Ideas de Regalo</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="../paginas/nosotros.html">Nosotros</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="../paginas/contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+
+                        <form class="d-flex input-buscar ">
+                            <input class="form-control me-2 nav_input" type="search" placeholder="Buscar Productos" aria-label="Buscar">
+                            <button class="btn btn-outline-success" type="submit"><img class="nav_lupa" src="../imagenes/lupa.png" alt="Lupa"></button>
+                        </form>
+                        <a href=""><img src="../imagenes/carrito.png" alt=""></a>
+                    </div>
                 </div>
-                <img src="./imagenes/carrito.png" alt="">
+            </nav>
         </header>
+
         <main>
             <div class="banner">
                 <img src="./imagenes/banner2.png" alt="banner">
@@ -135,44 +160,58 @@
                 </section>
             </div>
         </main>
-        <footer>
-            <div class="cuatro-secciones">
-                <section class="politicas">
-                    <h2>POLÍTICAS</h2>
-                    <p>Términos y Condiciones</p>
-                    <p>Política de envíos</p>
-                    <p>Política de cambios</p>
-                    <p>Política de privacidad</p>
-                </section>
-
-                <section class="contactanos">
-                    <h2>CONTÁCTANOS</h2>
-                    <p>+51 987 708 727</p>
-                    <p>lorena.2209@gmail.com</p>
-                </section>
-
-                <section class="redes-sociales">
-                    <h2>REDES SOCIALES</h2>
-                    <img src="./imagenes/facebook.png" alt="fb">
-                    <img src="./imagenes/instagram.png" alt="ig">
-                    <img src="./imagenes/whatsap.png" alt="wsp">
-                </section>
-
-                <section>
-                    <h2>MEDIOS DE PAGO</h2>
-                    <img src="./imagenes/yape.png" alt="yape">
-                    <img src="./imagenes/BCP.png" alt="BCP">
-                    <img src="./imagenes/plin.png" alt="plin">
-                    <img src="./imagenes/visa.jpg" alt="visa">
-                    <img src="./imagenes/mastercard.png" alt="master">
-                </section>
+        <footer class="bg-dark text-light">
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h2>POLÍTICAS</h2>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Términos y Condiciones</a></li>
+                            <li><a href="#">Política de envíos</a></li>
+                            <li><a href="#">Política de cambios</a></li>
+                            <li><a href="#">Política de privacidad</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h2>CONTÁCTANOS</h2>
+                        <p>+51 987 708 727</p>
+                        <p>lorena.2209@gmail.com</p>
+                    </div>
+                    <div class="col-md-3">
+                        <h2>REDES SOCIALES</h2>
+                        <div class="d-flex">
+                            <img src="../imagenes/facebook.png" alt="fb" class="me-2">
+                            <img src="../imagenes/instagram.png" alt="ig" class="me-2">
+                            <img src="../imagenes/whatsap.png" alt="wsp">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <h2>MEDIOS DE PAGO</h2>
+                        <div class="d-flex">
+                            <img src="../imagenes/yape.png" alt="yape" class="me-2">
+                            <img src="../imagenes/BCP.png" alt="BCP" class="me-2">
+                            <img src="../imagenes/plin.png" alt="plin" class="me-2">
+                            <img src="../imagenes/visa.jpg" alt="visa" class="me-2">
+                            <img src="../imagenes/mastercard.png" alt="master" class="me-4">
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <div class="copyrigth">
-                <p>&copy;2023 ACCESORIOS LORENA AMAYA</p>
-                <img src="./imagenes/volver arriba.png" alt="volver arriba">
+            <div class="bg-secondary py-3">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-9 text-center text-md-start">
+                            <p>&copy;2023 ACCESORIOS LORENA AMAYA</p>
+                        </div>
+                        <div class="col-md-3 text-center text-md-end">
+                            <a href="#" class="me-2">Volver Arriba</a>
+                            <img src="../imagenes/volver arriba.png" alt="volver arriba">
+                        </div>
+                    </div>
+                </div>
             </div>
         </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     </body>
 </html>
 
