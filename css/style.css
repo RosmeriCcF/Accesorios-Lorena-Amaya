@@ -1,6 +1,5 @@
 /*Reset - margen y relleno*/
 *{
-    font-family: 'DM Sans', sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -140,6 +139,10 @@ footer {
 }
 
 /* Boostrap Contacto */
+.navbar-toggler-container {
+    margin-left: auto;
+}
+
 .bg-header{
     background-color: white;
     display: flex; /*Modelo de caja flexible*/
@@ -173,36 +176,4 @@ footer {
 .main-content {
     background-color: #FADCE1;
 }
-
-/* GRID */
-.footer-grid{
-    padding: 20px;
-    background-color: #f0f0f0;
-  }
-
-  .footer-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 20px;
-    align-items: center;
-  }
-
-  .footer-grid section {
-    text-align: center;
-  }
-
-  .footer-grid img {
-    max-width: 100%;
-  }
-
-  .copyrigth {
-    text-align: center;
-    margin-top: 20px;
-  }
-
-
-
-
-
-
 
