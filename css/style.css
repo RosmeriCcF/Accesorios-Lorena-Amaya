@@ -67,7 +67,6 @@ img {
 }
 
 .frases {
-    display: flex;
     justify-content: space-between;
 }
 
@@ -90,6 +89,13 @@ img {
 
 
 /* Boostrap */
+.Texto{
+    
+}
+
+.main-content{
+    background-color: #D14D72;
+}
 /* Footer */
 .bg-pink{
     background-color: #D14D72;
