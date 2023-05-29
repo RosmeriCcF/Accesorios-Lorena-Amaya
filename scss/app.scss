@@ -155,7 +155,6 @@ section{
         }
 
         .product-card{
-            width: 18vw;
             height: 50vh;
             background-color: $quaternary-color;
             color: $primary-text-color;
@@ -180,7 +179,7 @@ section{
                 justify-content: center;
                 align-items: center;
                 img{
-                    width: 12vw;
+                    
                     height: 30vh;
                     object-fit: cover;
                     border-radius: 6px;
