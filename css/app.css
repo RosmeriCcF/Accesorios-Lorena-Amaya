@@ -4,6 +4,10 @@ body {
   background-color: #FADCE1;
   font-family: "IBM Plex Sans", sans-serif;
 }
+body h1 {
+  color: #D14D72;
+  font-weight: bold;
+}
 
 header {
   background-color: #FFABAB;
