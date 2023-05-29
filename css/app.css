@@ -312,4 +312,49 @@ footer .copyrigth .back-to-top img {
   width: 30px;
   height: 30px;
   cursor: pointer;
+}
+
+.main-section2 {
+  overflow-x: hidden;
+}
+.main-section2 .row.align-items-center {
+  align-items: center;
+}
+.main-section2 .row .col-md-6 img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: 70%;
+  border-radius: 25px;
+}
+.main-section2 .row .col-md-6 h2 {
+  text-align: center;
+  color: #D14D72;
+  font-size: 1.5em;
+}
+.main-section2 .row .col-md-6 p {
+  color: black;
+  font-size: 1.5em;
+  text-align: left;
+}
+.main-section2 .row .col-md-6 h3 {
+  text-align: center;
+  color: #D14D72;
+  font-weight: bold;
+  font-size: 1em;
+  margin-top: 1em;
+}
+.main-section2 .row .card {
+  width: 18rem;
+}
+.main-section2 .row .card .card-body h2.card-title {
+  text-align: center;
+  color: #D14D72;
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+.main-section2 .row .card .card-body h3.card-text {
+  color: #D14D72;
+  font-size: 1.5em;
+  text-align: justify;
 }/*# sourceMappingURL=app.css.map */
