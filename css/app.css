@@ -298,4 +298,11 @@ footer .copyrigth p {
 }
 footer .copyrigth img {
   width: 20px;
+}
+
+/* CATEGORIAS */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }/*# sourceMappingURL=app.css.map */

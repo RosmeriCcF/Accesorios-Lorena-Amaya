@@ -1,172 +1,180 @@
 <!DOCTYPE html> 
 <html lang="es">
     <head>
-        <meta charset="UTF-8">
+        <meta charset="UTF-8"> <!--Acentos-->
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="../imagenes/Favicon.png" type="image/x-icon">
-        <link rel="stylesheet" href="../css/style.css">
-        <title>Categorías</title>
+
+        <!-- SEO -->
+        <meta name="Lorena Amaya | Categorías" content="Anillos, Collares, Pulseras, Pendientes">
+        <meta name="keywords" content="joyas, categorías, anillos, collares, pulseras, pendientes">
+        
+        <!-- Ícono -->
+        <link rel="shortcut icon" href="../imagenes/img/Favicon.png" type="image/x-icon">
+
+        <!-- Conectar con el CSS -->
+        <link rel="stylesheet" href="../css/app.css">
+
         <!-- Bootstrap -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+        <!-- Nombre de la sección -->
+        <title>Lorena Amaya | Categorías</title>
     </head>
     <body>
+        <!-- Cabecera -->
         <header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-header ">
+            <nav class="navbar navbar-expand-lg navbar-light bg-header">
                 <div class="container-fluid">
-                    <a href="../index.html"><img src="../imagenes/logo.png" alt="logo"></a><!--Logo -> Inicio = Click-->
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <a href="../index.html"><img src="../imagenes/img/logo.png" alt="logo" class="logo"></a> 
+                    
+                    <!--Logo -> Inicio = Click-->
+                    <button class="navbar-toggler navbar-toggler-container" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-
+        
                     <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item">
                                 <a class="nav-link" href="../index.html">Inicio</a>
                             </li>
-
+        
                             <li class="nav-item">
-                                <a class="nav-link" href="../paginas/categorias.html">Categorías</a>
+                                <a class="nav-link" href="./paginas/categorias.html">Categorías</a>
                             </li>
-
+        
                             <li class="nav-item">
                                 <a class="nav-link" href="../paginas/ideas-de-regalo.html">Ideas de Regalo</a>
                             </li>
-
+        
                             <li class="nav-item">
                                 <a class="nav-link" href="../paginas/nosotros.html">Nosotros</a>
                             </li>
-
+        
                             <li class="nav-item">
                                 <a class="nav-link" href="../paginas/contacto.html">Contacto</a>
                             </li>
                         </ul>
-
+        
                         <form class="d-flex input-buscar">
                             <input class="form-control me-2 nav_input" type="search" placeholder="Buscar Productos" aria-label="Buscar">
-                            <button class="btn btn-outline-success" type="submit"><img class="nav_lupa" src="../imagenes/lupa.png" alt="Lupa"></button>
+                            <button class="btn btn-outline-success" type="submit">Buscar</button>
                         </form>
-                        <a href=""><img src="../imagenes/carrito.png" alt=""></a>
+                        <a href=""><img src="../imagenes/img/carrito.png" alt="carrito" class="carrito"></a>
                     </div>
                 </div>
             </nav>
         </header>
-        <main>
-            <h1>Categorías</h1>
-            <div class="input-buscar">
-                <img class="nav_lupa" src="../imagenes/lupa.png" alt="Lupa">
-                <input class="nav_input" type="text" placeholder="Buscar Productos">
-                <button>Ordenar por:</button>
-            </div>
 
-            <div class="cuadro-tres">
-                <img src="../imagenes/anillo-tres.jpg" alt="">
-                <h2>Anillos Eyes</h2>
-                <h3>Anillos</h3>
-                <p>S/. 50.00</p>
-                <button>Seleccionar</button>
-            </div>
+        <main class="main-section">
+            <section class="categories">
+              <div class="search-bar">
+                <h2>Categorías</h2>
+                <form class="d-flex input-buscar">
+                  <input class="form-control me-2 nav_input" type="search" placeholder="Buscar Productos" aria-label="Buscar">
+                  <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+              </div>
+              <div class="filter-dropdown">
+                <select class="form-select">
+                  <option value="" disabled selected>Ordenar por</option>
+                  <option value="anillos">Anillos</option>
+                  <option value="aretes">Aretes</option>
+                  <option value="broches">Broches</option>
+                  <option value="colgantes">Colgantes</option>
+                  <option value="collares">Collares</option>
+                  <option value="pulseras">Pulseras</option>
+                </select>
+              </div>
+          
+              <div class="card-container">
+                <div class="card">
+                  <img src="../imagenes/img/anillos-categorias.jpg" alt="Joyas 1">
+                  <h3>Anillos Eyes</h3>
+                  <p>S/. 60.00</p>
+                  <button class="btn btn-primary">Seleccionar</button>
+                </div>
+          
+                <div class="card">
+                  <img src="../imagenes/img/anillos-categorias.jpg" alt="Joyas 1">
+                  <h3>Anillos Eyes</h3>
+                  <p>S/. 60.00</p>
+                  <button class="btn btn-primary">Seleccionar</button>
+                </div>
+          
+                <div class="card">
+                  <img src="../imagenes/img/anillos-categorias.jpg" alt="Joyas 1">
+                  <h3>Anillos Eyes</h3>
+                  <p>S/. 60.00</p>
+                  <button class="btn btn-primary">Seleccionar</button>
+                </div>
+              </div>
+              <div class="load-more">
+                <button id="load-more-button" class="btn btn-primary">Siguiente</button>
+              </div>
+            </section>
+          </main>
+          
+        
+        
 
-            <div class="cuadro-tres">
-                <img src="../imagenes/anillo-tres.jpg" alt="">
-                <h2>Anillos Eyes</h2>
-                <h3>Anillos</h3>
-                <p>S/. 50.00</p>
-                <button>Seleccionar</button>
-            </div>
 
-            <div class="cuadro-tres">
-                <img src="../imagenes/anillo-tres.jpg" alt="">
-                <h2>Anillos Eyes</h2>
-                <h3>Anillos</h3>
-                <p>S/. 50.00</p>
-                <button>Seleccionar</button>
-            </div>
-
-            <div class="cuadro-tres">
-                <img src="../imagenes/anillo-tres.jpg" alt="">
-                <h2>Anillos Eyes</h2>
-                <h3>Anillos</h3>
-                <p>S/. 50.00</p>
-                <button>Seleccionar</button>
-            </div>
-
-            <div class="cuadro-tres">
-                <img src="../imagenes/anillo-tres.jpg" alt="">
-                <h2>Anillos Eyes</h2>
-                <h3>Anillos</h3>
-                <p>S/. 50.00</p>
-                <button>Seleccionar</button>
-            </div>
-
-            <div class="cuadro-tres">
-                <img src="../imagenes/anillo-tres.jpg" alt="">
-                <h2>Anillos Eyes</h2>
-                <h3>Anillos</h3>
-                <p>S/. 50.00</p>
-                <button>Seleccionar</button>
-            </div>
-
-        </main>
         <!-- Pie de página -->
         <footer>
-            <div class="container-fluid bg-white">
+            <div class="container">
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <section class="politicas">
                             <h2>POLÍTICAS</h2>
-                            <p>Términos y condiciones</p>
                             <p>Términos y Condiciones</p>
                             <p>Política de envíos</p>
                             <p>Política de cambios</p>
                             <p>Política de privacidad</p>
                         </section>
                     </div>
-                    <div class="col-md-3">
-                        <h2>CONTÁCTANOS</h2>
-                        <p>+51 987 708 727</p>
-                        <p>lorena.2209@gmail.com</p>
+                    <div class="col-md-4">
+                        <section class="redes-sociales">
+                            <h2>REDES SOCIALES</h2>
+                            <div class="d-flex">
+                                <a href="https://www.facebook.com/accesorioslorenaamaya" target="_blank">
+                                    <img src="../imagenes/img/facebook.png" alt="fb">
+                                </a>
+                                <a href="https://www.instagram.com/accesorios_lorena.amaya/" target="_blank">
+                                    <img src="../imagenes/img/instagram.png" alt="ig">
+                                </a>
+                                <a href="https://api.whatsapp.com/send?phone=%2B51987708727&data=AWAGRNIqAZpQz5rvazw8YXXG88U8KObXu1xVIN370VDJ1A1Fn6tyrwqbLv03RpulWusK6UzX7kafNvpP6BY77ZMcAzOvuPk9qh6W8eEyMnOErnH4X0hf6vCk0D6e9fPCrR5_e_v3NdteImK4j6bjcvkyCZ8JIQxc6vnXj-mYbWX_Qp54VsJSE6ag_AjBmUduDPrjirZr-Vqbia3pFZcFREQA8X49gCqRyhnRs1NJCDmyr5mjzOj88jNnjQjT1jJEdEI3Cth8lDO6amHgHLWxsG_f3Dux05QPYKkkYFVxJ1LQiwALjtA&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR379sKUwEJRVWce4HAkO2bto_T3NnBJP4SN3O1ma2pdDp4Qe3o25b2nR0I" target="_blank">
+                                    <img src="../imagenes/img/whatsap.png" alt="wsp">
+                                </a>
+                            </div>
+                        </section>
                     </div>
-                    <div class="col-md-3">
-                        <h2>REDES SOCIALES</h2>
-                        <div class="d-flex">
-                            <a href="https://www.facebook.com/accesorioslorenaamaya" target="_blank">
-                                <img src="../imagenes/facebook.png" alt="fb" class="me-2">
-                            </a>
-                            <a href="https://www.instagram.com/accesorios_lorena.amaya/" target="_blank">
-                                <img src="../imagenes/instagram.png" alt="ig" class="me-2">
-                            </a>
-                            <a href="https://api.whatsapp.com/send?phone=%2B51987708727&data=AWAGRNIqAZpQz5rvazw8YXXG88U8KObXu1xVIN370VDJ1A1Fn6tyrwqbLv03RpulWusK6UzX7kafNvpP6BY77ZMcAzOvuPk9qh6W8eEyMnOErnH4X0hf6vCk0D6e9fPCrR5_e_v3NdteImK4j6bjcvkyCZ8JIQxc6vnXj-mYbWX_Qp54VsJSE6ag_AjBmUduDPrjirZr-Vqbia3pFZcFREQA8X49gCqRyhnRs1NJCDmyr5mjzOj88jNnjQjT1jJEdEI3Cth8lDO6amHgHLWxsG_f3Dux05QPYKkkYFVxJ1LQiwALjtA&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR379sKUwEJRVWce4HAkO2bto_T3NnBJP4SN3O1ma2pdDp4Qe3o25b2nR0I" target="_blank">
-                                <img src="../imagenes/whatsap.png" alt="wsp">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <h2>MEDIOS DE PAGO</h2>
-                        <div class="d-flex">
-                            <img src="../imagenes/yape.png" alt="yape" class="me-2">
-                            <img src="../imagenes/BCP.png" alt="BCP" class="me-2">
-                            <img src="../imagenes/plin.png" alt="plin" class="me-2">
-                            <img src="../imagenes/visa.jpg" alt="visa" class="me-2">
-                        </div>
+                    <div class="col-md-4">
+                        <section class="medios-pago">
+                            <h2>MEDIOS DE PAGO</h2>
+                            <div class="d-flex">
+                                <img src="../imagenes/img/yape.png" alt="yape">
+                                <img src="../imagenes/img/BCP.png" alt="BCP">
+                                <img src="../imagenes/img/plin.png" alt="plin">
+                            </div>
+                        </section>
                     </div>
                 </div>
             </div>
-
-            <div class="container-fluid bg-pink">
+            <div class="copyrigth">
                 <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-md-9 text-center text-md-start">
+                    <div class="row">
+                        <div class="col-md-6">
                             <p>&copy;2023 ACCESORIOS LORENA AMAYA</p>
                         </div>
-                        <div class="col-md-3 text-center text-md-end">
-                            <a href="#" class="me-2">Volver Arriba</a>
-                            <img src="../imagenes/volver arriba.png" alt="volver arriba">
+                        <div class="col-md-6 text-md-end">
+                            <img src="../imagenes/img/volver arriba.png" alt="volver arriba">
                         </div>
                     </div>
                 </div>
             </div>
         </footer>
+
+
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     </body>
 </html>

@@ -326,3 +326,39 @@ footer {
         }
     }
 }
+
+
+
+
+
+/* CATEGORIAS */
+
+
+.categories {
+  // Estilos para la sección de categorías en general
+}
+
+.search-bar {
+  // Estilos para la barra de búsqueda
+}
+
+.filter-dropdown {
+  // Estilos para el botón desplegable
+}
+
+.card-container {
+  // Estilos para el contenedor de las cards
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); // Ajusta el número de columnas según necesites
+  gap: 20px; // Espacio entre las cards
+}
+
+.card {
+  // Estilos para cada card
+}
+
+.more-cards {
+  // Estilos para la sección de más categorías
+}
+
+// Aquí puedes agregar estilos adicionales según tus necesidades
