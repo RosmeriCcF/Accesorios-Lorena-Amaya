@@ -32,6 +32,7 @@ body{
     }
 }
 
+/* HEADER */
 header{
     background-color: $quaternary-color;
     .logo {
@@ -51,6 +52,7 @@ header{
     }
 }
 
+/* MAIN */
 article{
     width: auto;
     color: $primary-text-color;
@@ -276,7 +278,69 @@ section{
     }
 }
 
+/* MAIN NOSOTROS */
+.main-section2 {
+    overflow-x: hidden;
 
+    .row {
+        &.align-items-center {
+            align-items: center;
+        }
+
+        .col-md-6 {
+            img {
+                display: block;
+                margin: 0 auto;
+                max-width: 100%;
+                height: 70%;
+                border-radius: 25px;
+            }
+
+            h2 {
+                text-align: center;
+                color: $primary-text-color;
+                font-size: 1.5em;
+            }
+
+            p {
+                color: black;
+                font-size: $paragraph-size;
+                text-align: left;
+            }
+
+            h3 {
+                text-align: center;
+                color: $primary-text-color;
+                font-weight: bold;
+                font-size: 1em;
+                margin-top: 1em;
+            }
+        }
+
+        .card {
+            width: 18rem;
+
+            .card-body {
+                h2.card-title {
+                    text-align: center;
+                    color: $primary-text-color;
+                    font-size: 1.5em;
+                    margin-bottom: 0.5em;
+                }
+
+                h3.card-text {
+                    color: $primary-text-color;
+                    font-size: $paragraph-size;
+                    text-align: justify;
+                }
+            }
+        }
+    }
+}
+
+
+
+/* FOOTER */
 footer{
     background-color: $quaternary-color;
     color: $primary-text-color;
@@ -372,62 +436,4 @@ footer{
 }
 
 
-.main-section2 {
-    overflow-x: hidden;
-
-    .row {
-        &.align-items-center {
-            align-items: center;
-        }
-
-        .col-md-6 {
-            img {
-                display: block;
-                margin: 0 auto;
-                max-width: 100%;
-                height: 70%;
-                border-radius: 25px;
-            }
-
-            h2 {
-                text-align: center;
-                color: $primary-text-color;
-                font-size: 1.5em;
-            }
-
-            p {
-                color: black;
-                font-size: $paragraph-size;
-                text-align: left;
-            }
-
-            h3 {
-                text-align: center;
-                color: $primary-text-color;
-                font-weight: bold;
-                font-size: 1em;
-                margin-top: 1em;
-            }
-        }
-
-        .card {
-            width: 18rem;
-
-            .card-body {
-                h2.card-title {
-                    text-align: center;
-                    color: $primary-text-color;
-                    font-size: 1.5em;
-                    margin-bottom: 0.5em;
-                }
-
-                h3.card-text {
-                    color: $primary-text-color;
-                    font-size: $paragraph-size;
-                    text-align: justify;
-                }
-            }
-        }
-    }
-}
 
