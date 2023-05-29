@@ -4,11 +4,23 @@
         <meta charset="UTF-8"> <!--Acentos-->
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="./imagenes/Favicon.png" type="image/x-icon">
-        <link rel="stylesheet" href="./css/style.css">
-        <title>Lorena Amaya</title>
+
+        <!-- SEO -->
+        <meta name="Lorena Amaya | Inicio" content="¡Bienvenido a mi sitio web! Soy Lorena Amaya, diseñadora de joyas y creadora de piezas únicas y exclusivas. En mi página de inicio, encontrarás una muestra de mis creaciones y la pasión que pongo en cada una de ellas. Explora mi colección y descubre joyas que reflejan elegancia y estilo. Cada pieza es cuidadosamente elaborada con materiales de alta calidad. Si estás buscando una joya especial para ti o para regalar, estás en el lugar adecuado. ¡Disfruta de la belleza de las joyas y déjate inspirar">
+        <meta name="keywords" content="joyas, diseño de joyas, piezas exclusivas, elegancia, estilo, sofisticación, colección de joyas, materiales de alta calidad, detalle artesanal, joyería de lujo, regalos, joyas únicas, belleza, inspiración, tendencias de joyería">
+
+        <!-- Ícono -->
+        <link rel="shortcut icon" href="./imagenes/img/Favicon.png" type="image/x-icon">
+
+        <!-- Conectar con el CSS -->
+        <link rel="stylesheet" href="./css/app.css">
+        
         <!-- Bootstrap -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+
+        <!-- Nombre de la sección -->
+        <title>Lorena Amaya | Inicio</title>
     </head>
 
     <body>
@@ -16,7 +28,7 @@
         <header>
             <nav class="navbar navbar-expand-lg navbar-light bg-header">
                 <div class="container-fluid">
-                    <a href="index.html"><img src="./imagenes/logo.png" alt="logo"></a> 
+                    <a href="index.html"><img src="./imagenes/img/logo.png" alt="logo" class="logo"></a> 
                     
                     <!--Logo -> Inicio = Click-->
                     <button class="navbar-toggler navbar-toggler-container" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,124 +62,220 @@
                             <input class="form-control me-2 nav_input" type="search" placeholder="Buscar Productos" aria-label="Buscar">
                             <button class="btn btn-outline-success" type="submit">Buscar</button>
                         </form>
-                        <a href=""><img src="./imagenes/carrito.png" alt=""></a>
+                        <a href=""><img src="./imagenes/img/carrito.png" alt="carrito" class="carrito"></a>
                     </div>
                 </div>
             </nav>
         </header>
 
+
         <!-- Centro -->
-        <main class="main-content">
-            <div class="banner">
-                <img src="./imagenes/banner2.png" alt="banner">
-            </div>
+        <main class="main-section">
+            <article>
+                <div class="impact-section">
+                    <h1>Eleva tu estilo</h1>
+                    <p>Descubre joyas excepcionales y de lujo que reflejan tu estilo único. 
+                    <br> En Accesorios Lorena Amaya te ofrecemos una selección cuidadosamente <br> elaborada de piezas artesanales con materiales de alta calidad.
+                    </p>
+                    <button>Conoce más</button>
+                </div>
+                <div class="image-section">
+                    <img src="./imagenes/img/main-2.jpg" alt="">
+                </div>
+            </article>
 
-            <div class="nuestras-colecciones">
-                <h2>Nuestras colecciones</h2>
-                <section class="cuadro">
-                    <img src="./imagenes/anillos.jpg" alt="anillos">
-                    <h3>Todos los anillos</h3>
-                    <img src="./imagenes/flecha.png" alt="flecha">
-                </section>
+            <section class="product-section">
+                <div class="custom-collection">
+                    <div class="collection">
+                        <h2>Nuestras colecciones</h2>
+                    <div class="card-section">
+                        <div class="product-card">
+                            <div class="icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.34255 7.7779C3.5687 7.23194 3.90017 6.73586 4.31804 6.31799C4.7359 5.90012 5.23198 5.56865 5.77795 5.3425C6.32392 5.11635 6.90909 4.99995 7.50004 4.99995C8.09099 4.99995 8.67616 5.11635 9.22213 5.3425C9.7681 5.56865 10.2642 5.90012 10.682 6.31799L12 7.63599L13.318 6.31799C14.162 5.47407 15.3066 4.99997 16.5 4.99997C17.6935 4.99997 18.8381 5.47407 19.682 6.31799C20.526 7.16191 21.0001 8.30651 21.0001 9.49999C21.0001 10.6935 20.526 11.8381 19.682 12.682L12 20.364L4.31804 12.682C3.90017 12.2641 3.5687 11.7681 3.34255 11.2221C3.1164 10.6761 3 10.0909 3 9.49999C3 8.90904 3.1164 8.32387 3.34255 7.7779Z" stroke="#D14D72" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
 
-                <section class="cuadro">
-                    <img src="./imagenes/aretes.jpg" alt="aretes">
-                    <h3>Todos los aretes</h3>
-                    <img src="./imagenes/flecha.png" alt="flecha">
-                </section>
+                            <div class="product-image">
+                                <img src="./imagenes/img/anillos.jpg" alt="">
+                            </div> 
+                            <h3>Todos los anillos</h3>  
+                        </div>
 
-                <section class="cuadro">
-                    <img src="./imagenes/broches.jpg" alt="broches">
-                    <h3>Todos los broches</h3>
-                    <img src="./imagenes/flecha.png" alt="flecha">
-                </section>
+                        <div class="product-card">
+                            <div class="icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.34255 7.7779C3.5687 7.23194 3.90017 6.73586 4.31804 6.31799C4.7359 5.90012 5.23198 5.56865 5.77795 5.3425C6.32392 5.11635 6.90909 4.99995 7.50004 4.99995C8.09099 4.99995 8.67616 5.11635 9.22213 5.3425C9.7681 5.56865 10.2642 5.90012 10.682 6.31799L12 7.63599L13.318 6.31799C14.162 5.47407 15.3066 4.99997 16.5 4.99997C17.6935 4.99997 18.8381 5.47407 19.682 6.31799C20.526 7.16191 21.0001 8.30651 21.0001 9.49999C21.0001 10.6935 20.526 11.8381 19.682 12.682L12 20.364L4.31804 12.682C3.90017 12.2641 3.5687 11.7681 3.34255 11.2221C3.1164 10.6761 3 10.0909 3 9.49999C3 8.90904 3.1164 8.32387 3.34255 7.7779Z" stroke="#D14D72" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
 
-                <section>
-                    <img src="./imagenes/colgantes.jpg" alt="colgantes">
-                    <h3>Todos los colgantes</h3>
-                    <img src="./imagenes/flecha.png" alt="flecha">
-                </section>
+                            <div class="product-image">
+                                <img src="./imagenes/img/aretes.jpg" alt="">
+                            </div> 
+                            <h3>Todos los aretes</h3>  
+                        </div>
 
-                <section class="cuadro">
-                    <img src="./imagenes/collares.jpg" alt="collares">
-                    <h3>Todos los collares</h3>
-                    <img src="./imagenes/flecha.png" alt="flecha">
-                </section>
+                        <div class="product-card">
+                            <div class="icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.34255 7.7779C3.5687 7.23194 3.90017 6.73586 4.31804 6.31799C4.7359 5.90012 5.23198 5.56865 5.77795 5.3425C6.32392 5.11635 6.90909 4.99995 7.50004 4.99995C8.09099 4.99995 8.67616 5.11635 9.22213 5.3425C9.7681 5.56865 10.2642 5.90012 10.682 6.31799L12 7.63599L13.318 6.31799C14.162 5.47407 15.3066 4.99997 16.5 4.99997C17.6935 4.99997 18.8381 5.47407 19.682 6.31799C20.526 7.16191 21.0001 8.30651 21.0001 9.49999C21.0001 10.6935 20.526 11.8381 19.682 12.682L12 20.364L4.31804 12.682C3.90017 12.2641 3.5687 11.7681 3.34255 11.2221C3.1164 10.6761 3 10.0909 3 9.49999C3 8.90904 3.1164 8.32387 3.34255 7.7779Z" stroke="#D14D72" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
 
-                <section class="cuadro">
-                    <img src="./imagenes/pulseras.jpg" alt="pulseras">
-                    <h3>Todas las pulseras</h3>
-                    <img src="./imagenes/flecha.png" alt="flecha">
-                </section>
-            </div>
+                            <div class="product-image">
+                                <img src="./imagenes/img/broches.jpg" alt="">
+                            </div> 
+                            <h3>Todos los broches</h3>  
+                        </div>
 
-            <div class="lo-nuevo">
-                <h2>Lo nuevo</h2>
-                <section class="cuadro-dos">
-                    <img src="./imagenes/collar-nuevo.jpg" alt="collar-nuevo">
-                    <p>Collar personalizado de mujer de oro inoxidable</p>
-                    <h3>A partir de S/. 50.00</h3>
-                </section>
+                        <div class="product-card">
+                            <div class="icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.34255 7.7779C3.5687 7.23194 3.90017 6.73586 4.31804 6.31799C4.7359 5.90012 5.23198 5.56865 5.77795 5.3425C6.32392 5.11635 6.90909 4.99995 7.50004 4.99995C8.09099 4.99995 8.67616 5.11635 9.22213 5.3425C9.7681 5.56865 10.2642 5.90012 10.682 6.31799L12 7.63599L13.318 6.31799C14.162 5.47407 15.3066 4.99997 16.5 4.99997C17.6935 4.99997 18.8381 5.47407 19.682 6.31799C20.526 7.16191 21.0001 8.30651 21.0001 9.49999C21.0001 10.6935 20.526 11.8381 19.682 12.682L12 20.364L4.31804 12.682C3.90017 12.2641 3.5687 11.7681 3.34255 11.2221C3.1164 10.6761 3 10.0909 3 9.49999C3 8.90904 3.1164 8.32387 3.34255 7.7779Z" stroke="#D14D72" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+
+                            <div class="product-image">
+                                <img src="./imagenes/img/colgantes.jpg" alt="">
+                            </div> 
+                            <h3>Todos los colgantes</h3>  
+                        </div>
+
+                        <div class="product-card">
+                            <div class="icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.34255 7.7779C3.5687 7.23194 3.90017 6.73586 4.31804 6.31799C4.7359 5.90012 5.23198 5.56865 5.77795 5.3425C6.32392 5.11635 6.90909 4.99995 7.50004 4.99995C8.09099 4.99995 8.67616 5.11635 9.22213 5.3425C9.7681 5.56865 10.2642 5.90012 10.682 6.31799L12 7.63599L13.318 6.31799C14.162 5.47407 15.3066 4.99997 16.5 4.99997C17.6935 4.99997 18.8381 5.47407 19.682 6.31799C20.526 7.16191 21.0001 8.30651 21.0001 9.49999C21.0001 10.6935 20.526 11.8381 19.682 12.682L12 20.364L4.31804 12.682C3.90017 12.2641 3.5687 11.7681 3.34255 11.2221C3.1164 10.6761 3 10.0909 3 9.49999C3 8.90904 3.1164 8.32387 3.34255 7.7779Z" stroke="#D14D72" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+
+                            <div class="product-image">
+                                <img src="./imagenes/img/collares.jpg" alt="">
+                            </div> 
+                            <h3>Todos los collares</h3>  
+                        </div>
+
+                        <div class="product-card">
+                            <div class="icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.34255 7.7779C3.5687 7.23194 3.90017 6.73586 4.31804 6.31799C4.7359 5.90012 5.23198 5.56865 5.77795 5.3425C6.32392 5.11635 6.90909 4.99995 7.50004 4.99995C8.09099 4.99995 8.67616 5.11635 9.22213 5.3425C9.7681 5.56865 10.2642 5.90012 10.682 6.31799L12 7.63599L13.318 6.31799C14.162 5.47407 15.3066 4.99997 16.5 4.99997C17.6935 4.99997 18.8381 5.47407 19.682 6.31799C20.526 7.16191 21.0001 8.30651 21.0001 9.49999C21.0001 10.6935 20.526 11.8381 19.682 12.682L12 20.364L4.31804 12.682C3.90017 12.2641 3.5687 11.7681 3.34255 11.2221C3.1164 10.6761 3 10.0909 3 9.49999C3 8.90904 3.1164 8.32387 3.34255 7.7779Z" stroke="#D14D72" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+
+                            <div class="product-image">
+                                <img src="./imagenes/img/pulseras.jpg" alt="">
+                            </div> 
+                            <h3>Todas las pulseras</h3>   
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+
+                <div class="new-products">
+                    <h2>Lo nuevo</h2>
+                    <div class="card-section">
+                        <div class="product-card">
+                            <div class="icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.34255 7.7779C3.5687 7.23194 3.90017 6.73586 4.31804 6.31799C4.7359 5.90012 5.23198 5.56865 5.77795 5.3425C6.32392 5.11635 6.90909 4.99995 7.50004 4.99995C8.09099 4.99995 8.67616 5.11635 9.22213 5.3425C9.7681 5.56865 10.2642 5.90012 10.682 6.31799L12 7.63599L13.318 6.31799C14.162 5.47407 15.3066 4.99997 16.5 4.99997C17.6935 4.99997 18.8381 5.47407 19.682 6.31799C20.526 7.16191 21.0001 8.30651 21.0001 9.49999C21.0001 10.6935 20.526 11.8381 19.682 12.682L12 20.364L4.31804 12.682C3.90017 12.2641 3.5687 11.7681 3.34255 11.2221C3.1164 10.6761 3 10.0909 3 9.49999C3 8.90904 3.1164 8.32387 3.34255 7.7779Z" stroke="#D14D72" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+
+                            <div class="product-image">
+                                <img src="./imagenes/img/pulseras.jpg" alt="">
+                            </div> 
+                            <p>Anillo personalizado de mujer de oro inoxidable
+                            <br> A partir de
+                            <br> S/. 50.00    
+                            </p>   
+                        </div>
+
+                        <div class="product-card">
+                            <div class="icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.34255 7.7779C3.5687 7.23194 3.90017 6.73586 4.31804 6.31799C4.7359 5.90012 5.23198 5.56865 5.77795 5.3425C6.32392 5.11635 6.90909 4.99995 7.50004 4.99995C8.09099 4.99995 8.67616 5.11635 9.22213 5.3425C9.7681 5.56865 10.2642 5.90012 10.682 6.31799L12 7.63599L13.318 6.31799C14.162 5.47407 15.3066 4.99997 16.5 4.99997C17.6935 4.99997 18.8381 5.47407 19.682 6.31799C20.526 7.16191 21.0001 8.30651 21.0001 9.49999C21.0001 10.6935 20.526 11.8381 19.682 12.682L12 20.364L4.31804 12.682C3.90017 12.2641 3.5687 11.7681 3.34255 11.2221C3.1164 10.6761 3 10.0909 3 9.49999C3 8.90904 3.1164 8.32387 3.34255 7.7779Z" stroke="#D14D72" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+
+                            <div class="product-image">
+                                <img src="./imagenes/img/pulseras.jpg" alt="">
+                            </div> 
+                            <p>Anillo personalizado de mujer de oro inoxidable
+                            <br> A partir de
+                            <br> S/. 50.00    
+                            </p>   
+                        </div>
+
+                        <div class="product-card">
+                            <div class="icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.34255 7.7779C3.5687 7.23194 3.90017 6.73586 4.31804 6.31799C4.7359 5.90012 5.23198 5.56865 5.77795 5.3425C6.32392 5.11635 6.90909 4.99995 7.50004 4.99995C8.09099 4.99995 8.67616 5.11635 9.22213 5.3425C9.7681 5.56865 10.2642 5.90012 10.682 6.31799L12 7.63599L13.318 6.31799C14.162 5.47407 15.3066 4.99997 16.5 4.99997C17.6935 4.99997 18.8381 5.47407 19.682 6.31799C20.526 7.16191 21.0001 8.30651 21.0001 9.49999C21.0001 10.6935 20.526 11.8381 19.682 12.682L12 20.364L4.31804 12.682C3.90017 12.2641 3.5687 11.7681 3.34255 11.2221C3.1164 10.6761 3 10.0909 3 9.49999C3 8.90904 3.1164 8.32387 3.34255 7.7779Z" stroke="#D14D72" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+
+                            <div class="product-image">
+                                <img src="./imagenes/img/pulseras.jpg" alt="">
+                            </div> 
+                            <p>Anillo personalizado de mujer de oro inoxidable
+                            <br> A partir de
+                            <br> S/. 50.00    
+                            </p>   
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="info-section">
+                <div class="gallery">
+                    <h2>Galería de estilos</h2>
+                    <div class="gallery-images row">
+                      <div class="col-md-4">
+                        <img src="./imagenes/img/personalizados.png" alt="">
+                      </div>
+                      <div class="col-md-4">
+                        <img src="./imagenes/img/regalos.jpg" alt="">
+                      </div>
+                      <div class="col-md-4">
+                        <img src="./imagenes/img/style.jpg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  
+                <div class="container">
+                    <div class="about-us">
+                        <h2>¿Por qué nosotros?</h2>
+                        <div class="frases row">
+                          <div class="pago col-md-4">
+                            <img src="./imagenes/img/seguridad.png" alt="">
+                            <h3>PAGO SEGURO</h3>
+                            <p>Aceptamos diversas formas de pago y te aseguramos que tu transacción será segura</p>
+                          </div>
+                      
+                          <div class="delivery col-md-4">
+                            <img src="./imagenes/img/delivery.png" alt="">
+                            <h3>DELIVERY</h3>
+                            <p>Envíos a cualquier parte del Perú 100% seguros</p>
+                          </div>
+                      
+                          <div class="calidad col-md-4">
+                            <img src="./imagenes/img/calidad.png" alt="">
+                            <h3>CALIDAD</h3>
+                            <p>Diseños exclusivos, en tendencia y hechos a mano. Elaborados con dedicación</p>
+                          </div>
+                        </div>
+                      </div>
+                      
+                </div>
                 
-                <section class="cuadro-dos">
-                    <img src="./imagenes/pulsera-nuevo.jpg" alt="pulsera-nuevo">
-                    <p>Pulsera personalizada de mujer de oro inoxidable</p>
-                    <h3>A partir de S/. 50.00</h3>
-                </section>
-
-                <section class="cuadro-dos">
-                    <img src="./imagenes/anillo-nuevo.jpg" alt="anillo-nuevo">
-                    <p>Anillo personalizado de mujer de oro inoxidable</p>
-                    <h3>A partir de S/. 50.00</h3>
-                </section>
-
-                <button>Ver todo</button>
-            </div>
-
-            <div class="personalizados">
-                <img src="./imagenes/personalizados.png" alt="">
-                <h3>Personalizados</h3>
-                <button>Ver colección</button>
-            </div>
-
-            <div class="regalos">
-                <section class="uno-regalos">
-                    <h3>Regalos</h3>
-                    <p>Los mejores detalles para sorprender</p>
-                    <button>Ver colección</button>
-                </section>
-
-                <section class="dos-regalos">
-                    <img src="./imagenes/regalos.jpg" alt="regalo">
-                </section>
-            </div>
-
-            <div class="frases">
-                <section class="pago-seguro">
-                    <img src="./imagenes/seguridad.png" alt="seguro">
-                    <h2>PAGO SEGURO</h2>
-                    <p>Aceptamos diversas formas de pago y te aseguramos que tu transacción será segura</p>
-                </section>
-
-                <section class="delivery">
-                    <img src="./imagenes/delivery.png" alt="delivery">
-                    <h2>DELIVERY</h2>
-                    <p>Envíos a cualquier parte del Perú 100% seguros</p>
-                </section>
-
-                <section class="calidad">
-                    <img src="./imagenes/calidad.png" alt="">
-                    <h2>CALIDAD</h2>
-                    <p>Diseños exclusivos, en tendencia y hechas a mano. Elaborados con dedicación</p>
-                </section>
-            </div>
+            </section>
         </main>
 
         <!-- Pie de página -->
         <footer>
-            <div class="container-fluid bg-white justify-content-center">
+            <div class="container">
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <section class="politicas">
                             <h2>POLÍTICAS</h2>
                             <p>Términos y Condiciones</p>
@@ -176,51 +284,49 @@
                             <p>Política de privacidad</p>
                         </section>
                     </div>
-                    <div class="col-md-3">
-                        <h2>CONTÁCTANOS</h2>
-                        <p>+51 987 708 727</p>
-                        <p>lorena.2209@gmail.com</p>
+                    <div class="col-md-4">
+                        <section class="redes-sociales">
+                            <h2>REDES SOCIALES</h2>
+                            <div class="d-flex">
+                                <a href="https://www.facebook.com/accesorioslorenaamaya" target="_blank">
+                                    <img src="./imagenes/img/facebook.png" alt="fb">
+                                </a>
+                                <a href="https://www.instagram.com/accesorios_lorena.amaya/" target="_blank">
+                                    <img src="./imagenes/img/instagram.png" alt="ig">
+                                </a>
+                                <a href="https://api.whatsapp.com/send?phone=%2B51987708727&data=AWAGRNIqAZpQz5rvazw8YXXG88U8KObXu1xVIN370VDJ1A1Fn6tyrwqbLv03RpulWusK6UzX7kafNvpP6BY77ZMcAzOvuPk9qh6W8eEyMnOErnH4X0hf6vCk0D6e9fPCrR5_e_v3NdteImK4j6bjcvkyCZ8JIQxc6vnXj-mYbWX_Qp54VsJSE6ag_AjBmUduDPrjirZr-Vqbia3pFZcFREQA8X49gCqRyhnRs1NJCDmyr5mjzOj88jNnjQjT1jJEdEI3Cth8lDO6amHgHLWxsG_f3Dux05QPYKkkYFVxJ1LQiwALjtA&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR379sKUwEJRVWce4HAkO2bto_T3NnBJP4SN3O1ma2pdDp4Qe3o25b2nR0I" target="_blank">
+                                    <img src="./imagenes/img/whatsap.png" alt="wsp">
+                                </a>
+                            </div>
+                        </section>
                     </div>
-                    <div class="col-md-3">
-                        <h2>REDES SOCIALES</h2>
-                        <div class="d-flex">
-                            <a href="https://www.facebook.com/accesorioslorenaamaya" target="_blank">
-                                <img src="./imagenes/facebook.png" alt="fb" class="me-2">
-                            </a>
-                            <a href="https://www.instagram.com/accesorios_lorena.amaya/" target="_blank">
-                                <img src="./imagenes/instagram.png" alt="ig" class="me-2">
-                            </a>
-                            <a href="https://api.whatsapp.com/send?phone=%2B51987708727&data=AWAGRNIqAZpQz5rvazw8YXXG88U8KObXu1xVIN370VDJ1A1Fn6tyrwqbLv03RpulWusK6UzX7kafNvpP6BY77ZMcAzOvuPk9qh6W8eEyMnOErnH4X0hf6vCk0D6e9fPCrR5_e_v3NdteImK4j6bjcvkyCZ8JIQxc6vnXj-mYbWX_Qp54VsJSE6ag_AjBmUduDPrjirZr-Vqbia3pFZcFREQA8X49gCqRyhnRs1NJCDmyr5mjzOj88jNnjQjT1jJEdEI3Cth8lDO6amHgHLWxsG_f3Dux05QPYKkkYFVxJ1LQiwALjtA&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR379sKUwEJRVWce4HAkO2bto_T3NnBJP4SN3O1ma2pdDp4Qe3o25b2nR0I" target="_blank">
-                                <img src="./imagenes/whatsap.png" alt="wsp">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <h2>MEDIOS DE PAGO</h2>
-                        <div class="d-flex">
-                            <img src="./imagenes/yape.png" alt="yape" class="me-2">
-                            <img src="./imagenes/BCP.png" alt="BCP" class="me-2">
-                            <img src="./imagenes/plin.png" alt="plin" class="me-2">
-                            <img src="./imagenes/visa.jpg" alt="visa" class="me-2">
-                        </div>
+                    <div class="col-md-4">
+                        <section class="medios-pago">
+                            <h2>MEDIOS DE PAGO</h2>
+                            <div class="d-flex">
+                                <img src="./imagenes/img/yape.png" alt="yape">
+                                <img src="./imagenes/img/BCP.png" alt="BCP">
+                                <img src="./imagenes/img/plin.png" alt="plin">
+                            </div>
+                        </section>
                     </div>
                 </div>
             </div>
-
-            <div class="container-fluid bg-pink justify-content-center">
+            <div class="copyrigth">
                 <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-md-9 text-center text-md-start">
+                    <div class="row">
+                        <div class="col-md-6">
                             <p>&copy;2023 ACCESORIOS LORENA AMAYA</p>
                         </div>
-                        <div class="col-md-3 text-center text-md-end">
-                            <a href="#" class="me-2">Volver Arriba</a>
-                            <img src="./imagenes/volver arriba.png" alt="volver arriba">
+                        <div class="col-md-6 text-md-end">
+                            <img src="./imagenes/img/volver arriba.png" alt="volver arriba">
                         </div>
                     </div>
                 </div>
             </div>
         </footer>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+        
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     </body>
 </html>

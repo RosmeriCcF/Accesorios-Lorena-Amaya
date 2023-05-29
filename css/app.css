@@ -1,3 +1,301 @@
+@charset "UTF-8";
+/* Paleta de colores */
+body {
+  background-color: #FADCE1;
+  font-family: "IBM Plex Sans", sans-serif;
+}
 
+header {
+  background-color: #FFABAB;
+}
+header .logo {
+  width: 80px;
+  height: auto;
+}
+header .carrito {
+  margin-left: 10px;
+  width: 50px;
+  height: auto;
+}
 
-/*# sourceMappingURL=app.css.map */
+article {
+  width: auto;
+  color: #D14D72;
+  padding-left: 45px;
+  padding-right: 150px;
+  padding-top: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+article .impact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding-top: 20px;
+  gap: 25px;
+}
+article h1 {
+  font-size: 3em;
+  padding: 0px;
+  margin: 0px;
+}
+article p {
+  font-size: 1.5em;
+  color: black;
+}
+article button {
+  background: none;
+  border-style: none;
+}
+article button {
+  width: 12vw;
+  padding: 20px;
+  background-color: #FFABAB;
+  border-radius: 30px;
+  color: white;
+  font-size: 1em;
+}
+article button:hover { /* Pasas el mouse */
+  transform: scale(1.1);
+}
+article img {
+  width: 20vw;
+  border-radius: 20px;
+}
+
+section {
+  width: auto;
+  height: auto;
+  padding: 60px;
+}
+section h2 {
+  color: #D14D72;
+  font-size: 2em;
+}
+section .custom-collection {
+  width: 100%;
+}
+section .collection, section .new-products {
+  padding-bottom: 60px;
+}
+section .collection h2, section .new-products h2 {
+  font-weight: 300;
+  padding-bottom: 80px;
+}
+section .collection .card-section, section .new-products .card-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: auto;
+  height: auto;
+  flex-wrap: wrap;
+  -moz-column-gap: 200px;
+       column-gap: 200px;
+  row-gap: 80px;
+}
+section .collection .product-card, section .new-products .product-card {
+  width: 18vw;
+  height: 55vh;
+  background-color: #FFABAB;
+  color: #D14D72;
+  padding: 20px;
+  border-radius: 8px;
+}
+section .collection .product-card .icon, section .new-products .product-card .icon {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 12px;
+}
+section .collection .product-card .icon svg, section .new-products .product-card .icon svg {
+  width: 28px;
+  height: 28px;
+}
+section .collection .product-card .product-image, section .new-products .product-card .product-image {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .collection .product-card .product-image img, section .new-products .product-card .product-image img {
+  width: 12vw;
+  height: 30vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 6px;
+}
+section .collection .product-card h3, section .new-products .product-card h3 {
+  font-size: 1.2em; /* Ajusta el tamaño del título */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+section .collection .product-card p, section .new-products .product-card p {
+  font-size: 0.9em; /* Ajusta el tamaño del párrafo */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+section .new-products {
+  /* Herencia */
+}
+section .new-products .product-card {
+  background-color: #FCC8D1;
+  color: rgb(255, 106, 106);
+}
+section .new-products .product-card h3, section .new-products .product-card p {
+  color: #D14D72;
+}
+
+.gallery h2 {
+  font-weight: bold;
+  padding-bottom: 60px;
+  margin-bottom: 40px;
+}
+.gallery .gallery-images {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.gallery .gallery-images .col-md-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.gallery .gallery-images .col-md-4 img {
+  width: 28vw;
+  height: 45vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 5px 35%;
+     object-position: 5px 35%;
+  border-radius: 16px;
+  /* Transición */
+}
+.gallery .gallery-images .col-md-4 img:hover {
+  transform: scale(1.1);
+}
+
+.about-us {
+  padding-bottom: 60px;
+}
+.about-us h2 {
+  font-weight: bold;
+  padding-bottom: 60px;
+}
+.about-us .frases .pago,
+.about-us .frases .delivery,
+.about-us .frases .calidad {
+  color: #E86424;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.about-us .frases .pago img,
+.about-us .frases .delivery img,
+.about-us .frases .calidad img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-width: 100%;
+  height: auto;
+}
+.about-us .frases .pago h3,
+.about-us .frases .pago p,
+.about-us .frases .delivery h3,
+.about-us .frases .delivery p,
+.about-us .frases .calidad h3,
+.about-us .frases .calidad p {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+footer {
+  background-color: #FFABAB;
+  color: #D14D72;
+  padding: 10px;
+}
+footer .container .row {
+  flex-wrap: wrap;
+}
+footer .container .row .col-md-4 {
+  flex: 0 0 100%;
+  margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+  footer .container .row .col-md-4 {
+    flex: 0 0 33.33%;
+  }
+}
+footer .politicas h2,
+footer .redes-sociales h2,
+footer .medios-pago h2 {
+  font-weight: bold;
+}
+footer .politicas p,
+footer .redes-sociales p,
+footer .medios-pago p {
+  margin: 10px 0;
+}
+footer .politicas img,
+footer .redes-sociales img,
+footer .medios-pago img {
+  margin-right: 10px;
+  max-width: 100%;
+  height: auto;
+  max-height: 50px; /* Ajusta aquí el tamaño máximo de las imágenes */
+}
+footer .politicas .d-flex,
+footer .redes-sociales .d-flex,
+footer .medios-pago .d-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: wrap;
+  align-items: center;
+  gap: 10px;
+}
+footer .politicas .d-flex a img,
+footer .redes-sociales .d-flex a img,
+footer .medios-pago .d-flex a img {
+  width: 30px;
+}
+footer .politicas .medios-pago img,
+footer .redes-sociales .medios-pago img,
+footer .medios-pago .medios-pago img {
+  max-width: 60px; /* Ajusta aquí el tamaño máximo de las imágenes */
+}
+footer .medios-pago {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+footer .medios-pago .col-md-4 {
+  flex: 0 0 100%;
+}
+@media (min-width: 768px) {
+  footer .medios-pago .col-md-4 {
+    flex: 0 0 48%;
+  }
+}
+footer .copyrigth {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+footer .copyrigth p {
+  margin-right: 10px;
+  text-align: center;
+}
+footer .copyrigth img {
+  width: 20px;
+}/*# sourceMappingURL=app.css.map */
