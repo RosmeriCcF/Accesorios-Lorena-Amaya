@@ -1,2 +1,2 @@
-# PreEntrega2-Ccanto
-### Corrección: 5 secciones responsive
+# PreEntrega3-Ccanto
+### 5 secciones 
