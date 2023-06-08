@@ -1,0 +1,234 @@
+@import '../basicos/colors.scss';
+@import '../basicos/tipografia.scss';
+@import '../basicos/mixins.scss';
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: $primary-color;
+    font-family: 'Poppins';
+}
+
+article{
+    width: auto;
+    color: $primary-text-color;
+    padding: 50px 50px;
+
+    .impact-section{
+        padding-top: 20px;
+        gap: 25px;
+        text-align: left;
+
+        h1{
+            font-size: 3em;
+            padding: 0px;
+            margin: 0px;
+            font-weight: bold;
+        }
+        p{
+            color: black;
+            font-size: 25px;
+        }
+    }   
+
+    .btn-custom{
+        background-color: $primary-text-color;
+        color: $secondary-color;
+        font-weight: bold;
+        border-radius: 40px;
+        font-size: 1,5em;
+        width: 200px; 
+        height: 50px;
+        border-color: #D14D72;
+
+        &:hover {
+            transform: scale(1.1);
+            background-color: #D14D72;
+            border-color: #D14D72;
+        }
+    }
+
+    .image-section{
+        text-align: right;
+        img{
+            width: 100%;
+            max-width: 300px;
+            margin-top: 20px;
+            margin-right: 50px;
+            border-radius: 40px;
+        }
+    }
+}
+
+section{
+	width: auto;
+	height: auto;
+	padding: 50px;
+
+	h2{
+        color: $primary-text-color;
+        font-size: 2em;
+        font-weight: bold;
+        font-weight: 4000;
+		padding-bottom: 50px;
+	}
+
+	.custom-collection {
+        width: 100%; 
+    }
+    
+    .collection{
+        padding-bottom: 60px;
+
+		.card-section{
+            @include flexCenter(row, space-evenly, center);
+            width: auto;
+			height: auto;
+            flex-wrap: wrap;
+			column-gap: 200px;
+			row-gap: 80px;
+        }
+
+        .product-card{
+            height: 50vh;
+            background-color: #f3becd;
+            color: $primary-text-color;
+            padding: 20px;
+            border-radius: 8px;
+            /* Transición */
+            &:hover {
+                transform: scale(1.1);
+            }
+
+            .icon{
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+                padding-bottom: 12px;
+                svg{
+                    width: 28px;
+                    height: 28px;
+                    }
+            }
+
+            .product-image{
+                width: 100%;
+                height: auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    
+                    height: 30vh;
+                    object-fit: cover;
+                    border-radius: 6px;
+                    }
+            }
+
+            h3{
+                font-size: 1.5em; /* Ajusta el tamaño del título */
+                color: #D14D72;
+                font-weight: bold;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+        }
+	}
+
+    .new-products{
+        /* Herencia */
+        @extend .collection;
+        
+        .product-card{
+			background-color: #FE9FB0;
+			color:rgb(71, 2, 2);
+            height: 400px;
+
+            h3,p{
+                color: whitesmoke;
+            }
+            /* Transición */
+            &:hover {
+                transform: scale(1.1);
+            }
+		}
+    }
+}
+
+.gallery{
+    h2{
+        font-weight: bold;
+        padding-bottom: 5px;
+        margin-bottom: 20px;
+    }
+    
+    .gallery-images{
+        @include flexCenter(row, space-between, center);
+        
+        .col-md-4{
+            @include flexCenter(column, center, center);
+            
+            img{
+                height: 60vh;
+                object-fit: cover;
+                object-position: 5px 35%;
+                border-radius: 16px;
+                
+                /* Transición */
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
+
+.about-us{
+    padding-bottom: 60px;
+    
+    h2{
+        font-weight: bold;
+        padding-bottom: 60px;
+    }
+    
+    .frases{
+        .pago, .delivery, .calidad{
+        $text-color: #E86424;
+        color: $text-color;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        
+            img{
+                object-fit: contain;
+                max-width: 100%;
+                height: auto;
+            }
+
+            h3{
+                color: #D14D72;
+                font-weight: bold;
+            }
+            
+            p{
+                text-align: center;
+                //font-size: $paragraph-size;
+                color: black;
+            }
+        }
+    }
+}
+
+/* MAIN CATEGORÍAS */
+.main-section{
+    h1{
+        color: #D14D72;
+        font-weight: bold;
+    }
+}
+

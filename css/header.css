@@ -1,0 +1,23 @@
+/* Paleta de colores */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+header {
+  background-color: #FFFFFF;
+  font-family: "Poppins";
+  font-weight: bold;
+}
+header .nav-item:hover {
+  background-color: #FADCE1;
+  color: #FFFFFF;
+}
+header .logo {
+  width: 80px;
+  height: auto;
+}
+header .carrito {
+  margin-left: 10px;
+  width: 45px;
+  height: auto;
+}
+header .nav-item {
+  font-weight: bold;
+}/*# sourceMappingURL=header.css.map */

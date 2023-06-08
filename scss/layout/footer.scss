@@ -1,0 +1,87 @@
+@import '../basicos/colors.scss';
+@import '../basicos/tipografia.scss';
+@import '../basicos/mixins.scss';
+
+footer{
+    background-color: $secondary-color;
+    color: $primary-text-color;
+    font-family: 'Poppins';
+    padding: 0.2vh;;
+    .container{
+        .row{
+            flex-wrap: wrap;
+            .col-md-4{
+                flex: 0 0 100%;
+                margin-bottom: 20px;
+                @media (min-width: 768px){
+                    flex: 0 0 33.33%;
+                }
+            }
+        }
+    }
+
+    .politicas, .redes-sociales, .medios-pago{
+        h2{
+            font-weight: bold;
+        }
+        p{
+            margin: 10px 0;
+            font-weight: 100%;
+        }
+        img{
+            margin-right: 10px;
+            max-width: 100%;
+            height: auto;
+            max-height: 50px; /* Ajusta aquí el tamaño máximo de las imágenes */
+        }
+        .d-flex{
+            @include flexCenter(row, wrap, center);
+            gap: 10px;
+            a{
+                img{
+                    width: 40px;
+                }
+            }
+        }
+        .medios-pago{
+            img{
+                max-width: 40px; 
+            }
+        }
+    }
+
+    .medios-pago{
+        @include flexCenter(row, space-between, center);
+        flex-wrap: wrap;
+        .col-md-4{
+            flex: 0 0 100%;
+            @media (min-width: 768px){
+                flex: 0 0 48%;
+            }
+        }
+    }
+    .copyrigth{
+        @include flexCenter(row, space-evenly, center);
+        background-color: $primary-text-color;
+
+        p{
+            color: white;
+            margin-right: 20px;
+            text-align: center;
+            font-weight: 100%;
+        }
+        img{
+            width: 20px;
+        }
+        .back-to-top{
+            position: fixed;
+            bottom: 10px;
+            right: 20px;
+        }
+        .back-to-top img{
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+        }
+    }
+}
