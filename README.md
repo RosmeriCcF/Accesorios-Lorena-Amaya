@@ -1,2 +1,2 @@
-# PreEntrega3-Ccanto
-### 5 secciones 
+#  Entrega Final
+###  Sitio web para un emprendimiento de joyas
